@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de IMC</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Calculadora de IMC</h1>
+        <p>Calcula tu índice de masa corporal</p>
+    </header>
+
+    <main>
+        <section class="formulario">
+            <h2>Datos personales</h2>
+            <form id="forma">
+                <label for="peso">Peso (kg):</label>
+                <input id="peso" type="text" inputmode="decimal" placeholder="Ejemplo: 70.5">
+
+                <label for="estatura">Estatura (m):</label>
+                <input id="estatura" type="text" inputmode="decimal" placeholder="Ejemplo: 1.75">
+
+                <input type="submit" value="Calcular IMC" class="btn">
+            </form>
+        </section>
+
+        <section class="resultado">
+            <h2>Resultado</h2>
+            <p id="resultado"></p>
+            <p id="mensaje"></p>
+            <img id="imagenCategoria" src="images/placeholder.png" alt="resultado">
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy 2025 Marcos Uriel Martinez Muñiz</p>
+    </footer>
+
+    <script src="js/imc.js"></script>
+</body>
+</html>
